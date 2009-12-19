@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Test page for xHashchange</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.xhashchange.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(window).hashchange(function () {
+          $("#output").text(location.hash);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <ul>
+      <li><a href="#test0" id="#test0">In sed sapien nunc, in gravida massa.</a></li>
+      <li><a href="#test1" id="#test1">Praesent sit amet arcu magna.</a></li>
+      <li><a href="#test2" id="#test2">Nullam porta hendrerit odio eu aliquam.</a></li>
+      <li><a href="#test3" id="#test3">Ut rhoncus semper turpis quis blandit.</a></li>
+      <li><a href="#test4" id="#test4">In ut purus quam.</a></li>
+    </ul>
+    <p id ="output">default</p>
+  </body>
+</html>
