@@ -1,13 +1,20 @@
-/*!
- * jQuery Plugin: xHashchange - version 0.1
- * http://github.com/hail2u/jquery.xHashchange
- * Add hashchange event to any browser.
+/**
+ * @preserve jQuery Plugin: xHashchange - version 0.2
  *
- * Copyright (c) 2009 Kyo Nagashima <kyo@hail2u.net>
- * This library licensed under MIT license:
- * http://opensource.org/licenses/mit-license.php
+ * LICENSE: http://hail2u.mit-license.org/2009
  */
+
+/*jslint indent: 2, browser: true */
+/*global jQuery, $ */
+
 (function ($) {
+  "use strict";
+
+  // Private: check whether onhashchange event is supported or not
+  function hasOnhashchange() {
+    return typeof window.onhashchange !== "undefined";
+  }
+
   $.fn.hashchange = function (handler) {
     $(window).bind("hashchange", handler);
 
@@ -15,14 +22,14 @@
   };
 
   $.xHashchange = function () {
-    var o = $.xHashchange.defaults;
+    var o = $.xHashchange.defaults,
+      hash = null,
+      intervalID = null,
+      interval = 0;
 
     if (hasOnhashchange()) {
       $(window).trigger("hashchange");
     } else {
-      var hash = null;
-      var intervalID = null;
-      var interval = 0;
 
       if (hash === null) {
         hash = location.hash;
@@ -46,15 +53,10 @@
     return this;
   };
 
-  // Private: check whether onhashchange event is supported or not
-  function hasOnhashchange () {
-    return typeof window.onhashchange !== "undefined";
-  }
-
   // Public: default options
   $.xHashchange.defaults = {
     interval: 500
   };
 
   $.xHashchange();
-})(jQuery);
+}(jQuery));
