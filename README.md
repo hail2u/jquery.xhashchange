@@ -1,7 +1,7 @@
 TITLE
 =====
 
-jQuery Plugin: xHashchange - version 0.1
+jQuery Plugin: xHashchange - version 0.2
 
 DESCRIPTION
 ===========
@@ -18,6 +18,4 @@ Usage
 LICENSE
 =======
 
-Copyright (c) 2009 Kyo Nagashima <kyo@hail2u.net>  
-This library licensed under MIT license:  
-http://opensource.org/licenses/mit-license.php  
+MIT: http://hail2u.mit-license.org/2009
