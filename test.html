@@ -1,20 +1,19 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
     <title>Test page for xHashchange</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="./jquery.xhashchange.js"></script>
-    <script>
-      $(function () {
-        $(window).hashchange(function () {
-          $("#output").text("location.hash is: " + (location.hash ? location.hash : "empty"));
-        });
-      });
-    </script>
+
+    <link rel="stylesheet" href="http://hail2u.github.com/natural.css">
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   </head>
   <body>
-    <h1>Lorem ipsum dolor sit amet.</h1>
+    <header>
+      <h1>Test page for xHashchange</h1>
+    </header>
+
     <ul>
       <li><a href="#test0" id="#test0">In sed sapien nunc, in gravida massa.</a></li>
       <li><a href="#test1" id="#test1">Praesent sit amet arcu magna.</a></li>
@@ -22,6 +21,17 @@
       <li><a href="#test3" id="#test3">Ut rhoncus semper turpis quis blandit.</a></li>
       <li><a href="#test4" id="#test4">In ut purus quam.</a></li>
     </ul>
+
     <p id ="output">location.hash is: empty</p>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jquery.xhashchange.min.js"></script>
+    <script>
+      $(function () {
+        $(window).hashchange(function () {
+          $("#output").text("location.hash is: " + (location.hash ? location.hash : "empty"));
+        });
+      });
+    </script>
   </body>
 </html>
