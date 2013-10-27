@@ -1,12 +1,8 @@
-TITLE
-=====
-
-jQuery Plugin: xHashchange - version 0.2
-
-DESCRIPTION
-===========
+jQuery Plugin: xHashchange v0.2.1
+=================================
 
 Add hashchange event to any browser.
+
 
 Usage
 =====
@@ -14,6 +10,7 @@ Usage
     $(window).hashchange(function () {
       alert(location.hash);
     });
+
 
 LICENSE
 =======

@@ -1,0 +1,22 @@
+{
+  "name": "xhashchange",
+  "version": "0.4.1",
+  "title": "xHashchange",
+  "author": {
+    "name": "Kyo Nagashima",
+    "url": "http://hail2u.net/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://hail2u.mit-license.org/2009"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.5"
+  },
+  "description": "Add hashchange event to any browser.",
+  "homepage": "https://github.com/hail2u/jquery.xhashchange",
+  "demo": "http://hail2u.github.io/jquery.xhashchange/",
+  "bugs": "https://github.com/hail2u/jquery.xhashchange/issues"
+}
