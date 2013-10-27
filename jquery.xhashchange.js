@@ -1,5 +1,5 @@
 /**
- * @preserve jQuery Plugin: xHashchange - version 0.2.1
+ * @preserve jQuery Plugin: xHashchange v0.2.2
  *
  * LICENSE: http://hail2u.mit-license.org/2009
  */

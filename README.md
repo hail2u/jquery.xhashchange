@@ -1,4 +1,4 @@
-jQuery Plugin: xHashchange v0.2.1
+jQuery Plugin: xHashchange v0.2.2
 =================================
 
 Add hashchange event to any browser.
